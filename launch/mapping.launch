@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="teleop" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen" launch-prefix="xterm -e"/>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find robot_detection)/launch/rviz/mapping.rviz"/>
+
+</launch>
